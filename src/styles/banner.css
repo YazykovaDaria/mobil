@@ -1,5 +1,4 @@
 .banner {
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -61,6 +60,7 @@
 
 @media screen and (min-height: 800px) {
   .banner {
+    padding-bottom: 34px;
     background-image:
     image-set(
       url('/images/bgB.avif') type('image/avif') 1x,

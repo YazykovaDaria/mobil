@@ -10,78 +10,52 @@
   border-radius: 100px;
 }
 
-.gradient {
-  position: relative;
-
-
-  /* border-top: 1px solid transparent;
-  border-image: linear-gradient(to right, #ff7e5f, #feb47b) 1;
-  border-radius: 100px; */
-
-    /* background:
-    linear-gradient(90deg, #bc1fef 0%, #0035ff 100%),   #f0f0f0;
-  background-position: top;
-  background-size: 100% 2px;
-  background-repeat: no-repeat; */
-
-
-    /* &::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 30%;
-      width: 70%;
-      height: 30%;
-      background:
-      linear-gradient(90deg, #bc1fef 0%, #0035ff 100%);
-      border-radius: 100px;
-    } */
-  }
-
-  .gradient__label {
-    position: absolute;
-    top: -40%;
-    right: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: fit-content;
-    min-width: 119px;
-    max-width: 80%;
-    height: 20px;
-    padding: 0 10px;
-    transform: translateY(50%);
-    font-weight: 700;
-    font-size: 13px;
-    text-transform: uppercase;
-    text-align: center;
-    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.5);
-    background: linear-gradient(90deg, #bc1fef 0%, #0035ff 100%);
-    border-radius: 100px;
-  }
-
 .button-main {
-  /* position: relative;
-  z-index: 10; */
+  position: relative;
   backdrop-filter: blur(10.873126983642578px);
   background: rgba(255, 255, 255, 0.1);
 
-  /* &::before {
+  /* transform-style: preserve-3d;
+  &::before {
     content: '';
     position: absolute;
     top: -1px;
-    left: 30%;
+    left: 32%;
     z-index: -1;
-    width: 70%;
-    height: 50%;
+    width: 68%;
+    height: 60%;
     background: linear-gradient(90deg, #bc1fef 0%, #0035ff 100%);
-    border-radius: 100px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 80px;
+    transform: translateZ(-10px)
   } */
 
   &.active {
     border: 1px solid var(--color-main);
     background-color: rgba(255, 255, 255, 0.3024);
   }
+}
+
+.button__label {
+  position: absolute;
+  top: -40%;
+  right: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  min-width: 119px;
+  max-width: 80%;
+  height: 20px;
+  padding: 0 10px;
+  transform: translateY(50%);
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  text-align: center;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.5);
+  background: linear-gradient(90deg, #bc1fef 0%, #0035ff 100%);
+  border-radius: 100px;
 }
 
 
