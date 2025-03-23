@@ -1,0 +1,32 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px;
+  padding-top: 16px;
+  padding-bottom: 26px;
+}
+
+.card {
+  position: relative;
+
+  img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  }
+
+  figcaption {
+    position: absolute;
+    left: 8px;
+    bottom: 12px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-height: 800px) {
+  .cards {
+    gap: 6px;
+    padding-top: 24px;
+    padding-bottom: 34px;
+  }
+}

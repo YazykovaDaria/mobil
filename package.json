@@ -7,6 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
+    "eslint:fix": "npx eslint . --fix",
     "optimize-images": "node ./src/lib/image-optimization.js"
   },
   "devDependencies": {
@@ -18,7 +19,7 @@
     "vite": "^6.2.0"
   },
   "dependencies": {
-    "modern-normalize": "^3.0.1",
-    "sharp": "^0.33.5"
+    "sharp": "^0.33.5",
+    "the-new-css-reset": "^1.11.3"
   }
 }

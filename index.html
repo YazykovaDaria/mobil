@@ -1,15 +1,111 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Banner</title>
-  </head>
-  <body>
-    <div>
-banner content
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Banner</title>
+</head>
+
+<body>
+  <div class="banner">
+    <div class="banner__close">
+      <a href="#" class="close-button">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path clip-rule="evenodd" d="m7.01 6.6 5.406-5.406.398.398-5.406 5.406L13 12.589l-.41.411-5.592-5.592-5.406 5.406-.398-.398L6.6 7.011 1 1.41 1.41 1z" stroke-linejoin="round"/>
+        </svg>
+      </a>
     </div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+    <main class="main">
+      <section>
+        <h1 data-lang="Get Unlimited <br>Access" class="title">Get Unlimited <br>Access</h1>
+        <ul class="cards">
+          <li>
+            <figure class="card">
+              <picture>
+                <source type="image/avif"
+                  srcset="../images/c1.avif 1x, ../images/c1_x2.avif 2x, ../images/c1_x3.avif 3x">
+                <source type="image/webp"
+                  srcset="../images/c1.webp 1x, ../images/c1_x2.webp 2x, ../images/c1_x3.webp 3x">
+
+                <img src="../images/c1.jpg" alt="image">
+              </picture>
+              <figcaption data-lang="Unlimited Art <br>Creation">Unlimited Art <br>Creation</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="card">
+              <picture>
+                <source type="image/avif"
+                  srcset="../images/c2.avif 1x, ../images/c2_x2.avif 2x, ../images/c2_x3.avif 3x">
+                <source type="image/webp"
+                  srcset="../images/c2.webp 1x, ../images/c2_x2.webp 2x, ../images/c2_x3.webp 3x">
+
+                <img src="../images/c2.jpg" alt="image">
+              </picture>
+              <figcaption data-lang="Exclusive <br>Styles">Exclusive <br>Styles</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="card">
+              <picture>
+                <source type="image/avif"
+                  srcset="../images/c3.avif 1x, ../images/c3_x2.avif 2x, ../images/c3_x3.avif 3x">
+                <source type="image/webp"
+                  srcset="../images/c3.webp 1x, ../images/c3_x2.webp 2x, ../images/c3_x3.webp 3x">
+
+                <img src="../images/c3.jpg" alt="image">
+              </picture>
+              <figcaption data-lang="Magic Avatars <br>With 20% Off">Magic Avatars <br>With 20% Off</figcaption>
+            </figure>
+          </li>
+        </ul>
+
+        <div class="buttons js-choise">
+
+          <button type="button" data-link="https://apple.com/" class="button button-main gradient">
+            <div data-lang="BEST OFFER" class="gradient__label">BEST OFFER</div>
+            <div class="button__content">
+              <div>
+                <p data-lang="YEARLY ACCESS">Yearly access</p>
+                <p data-lang="Just {{price}} per year" class="button__subtitle" data-price="39.99">Just {{price}} per
+                  year</p>
+              </div>
+              <p data-lang="{{price}} <br>per week" class="button__subtitle" data-price="0.48">{{price}} <br>per week
+              </p>
+            </div>
+          </button>
+
+          <button type="button button-main active" data-link=" https://google.com/" class="button button-main active">
+            <div class="button__content">
+              <p data-lang="WEEKLY ACCESS">Weekly access</p>
+              <p class="button__subtitle" data-lang="{{price}} <br>per week" data-price="6.99">{{price}} <br>per week
+              </p>
+            </div>
+          </button>
+
+          <a href="https://google.com/ " class="button button-link js-link" data-lang="Continue">Continue</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <ul class="footer__list">
+        <li>
+          <a href="#" class="footer__link" data-lang="Terms of Use">Terms of Use</a>
+        </li>
+        <li>
+          <a href="#" class="footer__link" data-lang="Privacy Policy">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="#" class="footer__link" data-lang="Restore">Restore</a>
+        </li>
+      </ul>
+    </footer>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
 </html>
