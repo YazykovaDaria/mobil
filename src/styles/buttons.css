@@ -10,12 +10,11 @@
   border-radius: 100px;
 }
 
-.button-main {
+/*class for create gradient on part of border on button.Don't work now, becauce for correct border-top with gradient we need background in parent-element without opacity*/
+.border-gradient {
   position: relative;
-  backdrop-filter: blur(10.873126983642578px);
-  background: rgba(255, 255, 255, 0.1);
+  transform-style: preserve-3d;
 
-  /* transform-style: preserve-3d;
   &::before {
     content: '';
     position: absolute;
@@ -28,7 +27,14 @@
     border-top-left-radius: 100px;
     border-top-right-radius: 80px;
     transform: translateZ(-10px)
-  } */
+  }
+}
+
+.button-main {
+  position: relative;
+  backdrop-filter: blur(10.873126983642578px);
+  background: rgba(255, 255, 255, 0.1);
+
 
   &.active {
     border: 1px solid var(--color-main);
@@ -57,7 +63,6 @@
   background: linear-gradient(90deg, #bc1fef 0%, #0035ff 100%);
   border-radius: 100px;
 }
-
 
 .button__content {
   display: flex;
