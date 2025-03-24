@@ -3,8 +3,6 @@ import { resolve } from 'path';
 
 export default defineConfig({
 
-
-  // plugins: [ ],
   resolve: {
     alias: {
       '@public': resolve(__dirname, './public'),
